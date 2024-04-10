@@ -28,7 +28,8 @@
 
 
   <Target Name="ExecuteOnFileChange" AfterTargets="VSTest">
-    <Exec Command="powershell.exe .\generateCoverageReport.ps1" />
+    <Exec Command="powershell.exe .\generateCoverageReport.ps1" Condition="'$(OS)' == 'Windows_NT'" />
+    <Exec Command="pwsh ./generateCoverageReport.ps1" Condition="'$(OS)' != 'Windows_NT'" />
   </Target>
 
   <ItemGroup>
