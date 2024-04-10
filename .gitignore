@@ -1,2 +1,5 @@
 bin
 obj
+/coveragereport
+/kata.test/TestResults/
+.vs
