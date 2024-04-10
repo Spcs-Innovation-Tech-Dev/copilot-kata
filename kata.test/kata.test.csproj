@@ -26,4 +26,13 @@
     <ProjectReference Include="..\kata\kata.csproj" />
   </ItemGroup>
 
+
+  <Target Name="ExecuteOnFileChange" AfterTargets="Build">
+    <Exec Command="pwsh generateCoverageReport.ps1" />
+  </Target>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+  </ItemGroup>
+  
 </Project>
