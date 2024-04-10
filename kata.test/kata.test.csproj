@@ -27,8 +27,8 @@
   </ItemGroup>
 
 
-  <Target Name="ExecuteOnFileChange" AfterTargets="Build">
-    <Exec Command="pwsh generateCoverageReport.ps1" />
+  <Target Name="ExecuteOnFileChange" AfterTargets="VSTest">
+    <Exec Command="powershell.exe .\generateCoverageReport.ps1" />
   </Target>
 
   <ItemGroup>
