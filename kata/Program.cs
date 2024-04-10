@@ -1,22 +1,20 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using kata.Models;
 
 // create array of items
 List<Item> items = new List<Item>
 {
-    new Item("+5 Dexterity Vest", 10, 20),
-    new Item("Aged Brie", 2, 0),
-    new Item("Elixir of the Mongoose", 5, 7),
-    new Item("Sulfuras, Hand of Ragnaros", 0, 80),
-    new Item("Sulfuras, Hand of Ragnaros", -1, 80),
-    new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-    new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-    new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+    new RegularItem("+5 Dexterity Vest", 10, 20),
+    new AgedBrie(2, 0),
+    new RegularItem("Elixir of the Mongoose", 5, 7),
+    new Sulfuras(0, 80),
+    new Sulfuras(-1, 80),
+    new BackstagePass(15, 20),
+    new BackstagePass(10, 49),
+    new BackstagePass(5, 49),
     // this conjured item does not work properly yet
-    new Item("Conjured Mana Cake", 3, 6)
+    new RegularItem("Conjured Mana Cake", 3, 6)
 };
 
 var guildedRose = new GildedRose(items);
 guildedRose.UpdateQuality();
-

@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata", "kata\kata.csproj", "{FFD3C73C-A165-4F87-BE6F-C7AB9A6E096F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kata", "kata\kata.csproj", "{FFD3C73C-A165-4F87-BE6F-C7AB9A6E096F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata.test", "kata.test\kata.test.csproj", "{922EC4F7-97C3-4E55-80ED-290BA7AE9A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kata.test", "kata.test\kata.test.csproj", "{922EC4F7-97C3-4E55-80ED-290BA7AE9A8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBDA9E1F-B67B-46AD-92E3-1FC0C5E444FF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FFD3C73C-A165-4F87-BE6F-C7AB9A6E096F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +26,8 @@ Global
 		{922EC4F7-97C3-4E55-80ED-290BA7AE9A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922EC4F7-97C3-4E55-80ED-290BA7AE9A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922EC4F7-97C3-4E55-80ED-290BA7AE9A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

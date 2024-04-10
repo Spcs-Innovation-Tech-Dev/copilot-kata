@@ -43,10 +43,7 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 ### To create the reports:
 
 ```bash
-reportgenerator
--reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
--targetdir:"coveragereport"
--reporttypes:Html
+reportgenerator -reports:"kata.test/TestResults/5ca2ccb0-312e-410b-b2f4-0806e494f420/coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
 ```
 
 If you're in the same folder as the *coverage.cobertura.xml* file, you can run:
